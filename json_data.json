@@ -1,0 +1,428 @@
+{
+    "Goals": {
+        "CAPA": {
+            "Goal": 0.2,
+            "std_hours": 8
+        },
+        "Inspection": {
+            "Goal": 0.25,
+            "std_hours": 10
+        },
+        "New Product": {
+            "Goal": 0.3,
+            "std_hours": 12
+        },
+        "Audit": {
+            "Goal": 0.15,
+            "std_hours": 6
+        },
+        "Training": {
+            "Goal": 0.1,
+            "std_hours": 4
+        }
+    },
+    "radarData": {
+        "29436": {
+            "affinity": {
+                "Training": 2,
+                "CAPA": 2,
+                "Inspection": 4,
+                "New Product": 1,
+                "Audit": 3
+            },
+            "topicHours": {
+                "CAPA": 11.0,
+                "Inspection": 7.5,
+                "Training": 6.0
+            },
+            "name": "K Hart",
+            "title": "Inspector"
+        },
+        "32301": {
+            "affinity": {
+                "CAPA": 5,
+                "Inspection": 4,
+                "New Product": 4,
+                "Audit": 4,
+                "Training": 5
+            },
+            "topicHours": {
+                "Audit": 10.5,
+                "CAPA": 8.0,
+                "Inspection": 3.75,
+                "Training": 6.25
+            },
+            "name": "J Scott",
+            "title": "Quality Supervisor"
+        },
+        "49570": {
+            "affinity": {
+                "Inspection": 4,
+                "New Product": 1,
+                "Audit": 4,
+                "Training": 2,
+                "CAPA": 3
+            },
+            "topicHours": {
+                "Audit": 20.5,
+                "CAPA": 21.0,
+                "Inspection": 6.75,
+                "Training": 2.0
+            },
+            "name": "Z Taylor",
+            "title": "Inspector"
+        },
+        "77030": {
+            "affinity": {
+                "New Product": 2,
+                "Audit": 5,
+                "Training": 4,
+                "CAPA": 4,
+                "Inspection": 2
+            },
+            "topicHours": {
+                "Audit": 47.5,
+                "CAPA": 35.0,
+                "Inspection": 6.25,
+                "Training": 2.25
+            },
+            "name": "B Cranston",
+            "title": "Quality Analyst"
+        },
+        "77707": {
+            "affinity": {
+                "Audit": 4,
+                "Training": 4,
+                "CAPA": 3,
+                "Inspection": 3,
+                "New Product": 2
+            },
+            "topicHours": {
+                "Audit": 17.5,
+                "CAPA": 9.0,
+                "Inspection": 5.75,
+                "Training": 7.5
+            },
+            "name": "T Kwan",
+            "title": "Quality Coordinator"
+        },
+        "88927": {
+            "affinity": {
+                "CAPA": 2,
+                "Inspection": 5,
+                "New Product": 5,
+                "Audit": 3,
+                "Training": 3
+            },
+            "topicHours": {
+                "CAPA": 27.0,
+                "Inspection": 12.25,
+                "Training": 5.0
+            },
+            "name": "T Oliver",
+            "title": "Quality Engineer"
+        }
+    },
+    "sankeyData": [
+        {
+            "EmpNum": "29436",
+            "Topic": "CAPA",
+            "Status": "Late",
+            "count": 3
+        },
+        {
+            "EmpNum": "29436",
+            "Topic": "CAPA",
+            "Status": "On Time",
+            "count": 1
+        },
+        {
+            "EmpNum": "29436",
+            "Topic": "Inspection",
+            "Status": "Late",
+            "count": 3
+        },
+        {
+            "EmpNum": "29436",
+            "Topic": "Inspection",
+            "Status": "On Time",
+            "count": 3
+        },
+        {
+            "EmpNum": "29436",
+            "Topic": "Training",
+            "Status": "On Time",
+            "count": 7
+        },
+        {
+            "EmpNum": "29436.0",
+            "Topic": "New Product",
+            "Status": "Late",
+            "count": 4
+        },
+        {
+            "EmpNum": "29436.0",
+            "Topic": "New Product",
+            "Status": "On Time",
+            "count": 3
+        },
+        {
+            "EmpNum": "32301",
+            "Topic": "Audit",
+            "Status": "On Time",
+            "count": 4
+        },
+        {
+            "EmpNum": "32301",
+            "Topic": "CAPA",
+            "Status": "Late",
+            "count": 1
+        },
+        {
+            "EmpNum": "32301",
+            "Topic": "CAPA",
+            "Status": "On Time",
+            "count": 2
+        },
+        {
+            "EmpNum": "32301",
+            "Topic": "Inspection",
+            "Status": "Late",
+            "count": 2
+        },
+        {
+            "EmpNum": "32301",
+            "Topic": "Inspection",
+            "Status": "On Time",
+            "count": 1
+        },
+        {
+            "EmpNum": "32301",
+            "Topic": "Training",
+            "Status": "On Time",
+            "count": 5
+        },
+        {
+            "EmpNum": "32301.0",
+            "Topic": "New Product",
+            "Status": "On Time",
+            "count": 2
+        },
+        {
+            "EmpNum": "49570",
+            "Topic": "Audit",
+            "Status": "Late",
+            "count": 2
+        },
+        {
+            "EmpNum": "49570",
+            "Topic": "Audit",
+            "Status": "On Time",
+            "count": 5
+        },
+        {
+            "EmpNum": "49570",
+            "Topic": "CAPA",
+            "Status": "Late",
+            "count": 2
+        },
+        {
+            "EmpNum": "49570",
+            "Topic": "CAPA",
+            "Status": "On Time",
+            "count": 3
+        },
+        {
+            "EmpNum": "49570",
+            "Topic": "Inspection",
+            "Status": "Late",
+            "count": 4
+        },
+        {
+            "EmpNum": "49570",
+            "Topic": "Inspection",
+            "Status": "On Time",
+            "count": 2
+        },
+        {
+            "EmpNum": "49570",
+            "Topic": "Training",
+            "Status": "Late",
+            "count": 1
+        },
+        {
+            "EmpNum": "49570",
+            "Topic": "Training",
+            "Status": "On Time",
+            "count": 2
+        },
+        {
+            "EmpNum": "49570.0",
+            "Topic": "New Product",
+            "Status": "Late",
+            "count": 2
+        },
+        {
+            "EmpNum": "49570.0",
+            "Topic": "New Product",
+            "Status": "On Time",
+            "count": 2
+        },
+        {
+            "EmpNum": "77030",
+            "Topic": "Audit",
+            "Status": "Late",
+            "count": 2
+        },
+        {
+            "EmpNum": "77030",
+            "Topic": "Audit",
+            "Status": "On Time",
+            "count": 13
+        },
+        {
+            "EmpNum": "77030",
+            "Topic": "CAPA",
+            "Status": "Late",
+            "count": 7
+        },
+        {
+            "EmpNum": "77030",
+            "Topic": "CAPA",
+            "Status": "On Time",
+            "count": 2
+        },
+        {
+            "EmpNum": "77030",
+            "Topic": "Inspection",
+            "Status": "Late",
+            "count": 2
+        },
+        {
+            "EmpNum": "77030",
+            "Topic": "Inspection",
+            "Status": "On Time",
+            "count": 6
+        },
+        {
+            "EmpNum": "77030",
+            "Topic": "Training",
+            "Status": "Late",
+            "count": 1
+        },
+        {
+            "EmpNum": "77030",
+            "Topic": "Training",
+            "Status": "On Time",
+            "count": 3
+        },
+        {
+            "EmpNum": "77030.0",
+            "Topic": "New Product",
+            "Status": "Late",
+            "count": 3
+        },
+        {
+            "EmpNum": "77030.0",
+            "Topic": "New Product",
+            "Status": "On Time",
+            "count": 2
+        },
+        {
+            "EmpNum": "77707",
+            "Topic": "Audit",
+            "Status": "Late",
+            "count": 2
+        },
+        {
+            "EmpNum": "77707",
+            "Topic": "Audit",
+            "Status": "On Time",
+            "count": 6
+        },
+        {
+            "EmpNum": "77707",
+            "Topic": "CAPA",
+            "Status": "Late",
+            "count": 2
+        },
+        {
+            "EmpNum": "77707",
+            "Topic": "CAPA",
+            "Status": "On Time",
+            "count": 1
+        },
+        {
+            "EmpNum": "77707",
+            "Topic": "Inspection",
+            "Status": "Late",
+            "count": 2
+        },
+        {
+            "EmpNum": "77707",
+            "Topic": "Inspection",
+            "Status": "On Time",
+            "count": 2
+        },
+        {
+            "EmpNum": "77707",
+            "Topic": "Training",
+            "Status": "On Time",
+            "count": 8
+        },
+        {
+            "EmpNum": "77707.0",
+            "Topic": "New Product",
+            "Status": "Late",
+            "count": 4
+        },
+        {
+            "EmpNum": "77707.0",
+            "Topic": "New Product",
+            "Status": "On Time",
+            "count": 1
+        },
+        {
+            "EmpNum": "88927",
+            "Topic": "CAPA",
+            "Status": "Late",
+            "count": 4
+        },
+        {
+            "EmpNum": "88927",
+            "Topic": "CAPA",
+            "Status": "On Time",
+            "count": 5
+        },
+        {
+            "EmpNum": "88927",
+            "Topic": "Inspection",
+            "Status": "Late",
+            "count": 5
+        },
+        {
+            "EmpNum": "88927",
+            "Topic": "Inspection",
+            "Status": "On Time",
+            "count": 3
+        },
+        {
+            "EmpNum": "88927",
+            "Topic": "Training",
+            "Status": "Late",
+            "count": 1
+        },
+        {
+            "EmpNum": "88927",
+            "Topic": "Training",
+            "Status": "On Time",
+            "count": 5
+        },
+        {
+            "EmpNum": "88927.0",
+            "Topic": "New Product",
+            "Status": "Late",
+            "count": 3
+        }
+    ]
+}
