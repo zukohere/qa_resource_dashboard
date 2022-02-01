@@ -1,0 +1,38 @@
+[
+    {
+        "sex": "male",
+        "ses": "lol",
+        "endpoint": {"T Oliver": 100,
+            "Sickness_med": 0,
+            "Starvation": 0,
+            "Unknown": 0,
+            "Vehicle": 0}
+      },
+    {
+      "sex": "male",
+      "ses": "Horn",
+      "endpoint": {"Drowning": 0,
+      "Sickness_med": 100,
+      "Starvation": 0,
+      "Unknown": 0,
+      "Vehicle": 0}
+    },
+    {
+        "sex": "female",
+        "ses": "lol",
+        "endpoint": {"Drowning": 0,
+            "Sickness_med": 0,
+            "Starvation": 100,
+            "Unknown": 0,
+            "Vehicle": 0}
+      },
+      {
+        "sex": "female",
+        "ses": "Horn",
+        "endpoint": {"Drowning": 0,
+            "Sickness_med": 0,
+            "Starvation": 0,
+            "Unknown": 100,
+            "Vehicle": 0}
+      }
+  ]
