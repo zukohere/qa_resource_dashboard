@@ -31,9 +31,10 @@
                 "Audit": 3
             },
             "topicHours": {
-                "CAPA": 11.0,
-                "Inspection": 7.5,
-                "Training": 6.0
+                "CAPA": 29.0,
+                "Inspection": 10.0,
+                "New Product": 10.5,
+                "Training": 1.0
             },
             "name": "K Hart",
             "title": "Inspector"
@@ -47,10 +48,11 @@
                 "Training": 5
             },
             "topicHours": {
-                "Audit": 10.5,
-                "CAPA": 8.0,
-                "Inspection": 3.75,
-                "Training": 6.25
+                "Audit": 39.5,
+                "CAPA": 18.0,
+                "Inspection": 13.0,
+                "New Product": 18.5,
+                "Training": 10.75
             },
             "name": "J Scott",
             "title": "Quality Supervisor"
@@ -64,10 +66,11 @@
                 "CAPA": 3
             },
             "topicHours": {
-                "Audit": 20.5,
-                "CAPA": 21.0,
-                "Inspection": 6.75,
-                "Training": 2.0
+                "Audit": 17.5,
+                "CAPA": 30.0,
+                "Inspection": 6.0,
+                "New Product": 21.0,
+                "Training": 0.5
             },
             "name": "Z Taylor",
             "title": "Inspector"
@@ -81,10 +84,11 @@
                 "Inspection": 2
             },
             "topicHours": {
-                "Audit": 47.5,
-                "CAPA": 35.0,
-                "Inspection": 6.25,
-                "Training": 2.25
+                "Audit": 37.5,
+                "CAPA": 11.0,
+                "Inspection": 5.0,
+                "New Product": 31.0,
+                "Training": 7.75
             },
             "name": "B Cranston",
             "title": "Quality Analyst"
@@ -98,10 +102,11 @@
                 "New Product": 2
             },
             "topicHours": {
-                "Audit": 17.5,
-                "CAPA": 9.0,
-                "Inspection": 5.75,
-                "Training": 7.5
+                "Audit": 21.0,
+                "CAPA": 12.0,
+                "Inspection": 11.0,
+                "New Product": 4.5,
+                "Training": 1.25
             },
             "name": "T Kwan",
             "title": "Quality Coordinator"
@@ -115,9 +120,10 @@
                 "Training": 3
             },
             "topicHours": {
-                "CAPA": 27.0,
-                "Inspection": 12.25,
-                "Training": 5.0
+                "CAPA": 15.0,
+                "Inspection": 6.5,
+                "New Product": 12.0,
+                "Training": 7.0
             },
             "name": "T Oliver",
             "title": "Quality Engineer"
@@ -125,304 +131,124 @@
     },
     "sankeyData": [
         {
-            "EmpNum": "29436",
-            "Topic": "CAPA",
-            "Status": "Late",
-            "count": 3
+            "sex": "On Time",
+            "ses": "CAPA",
+            "endpoint": {
+                "32301-J Scott": 2,
+                "49570-Z Taylor": 4,
+                "77030-B Cranston": 5,
+                "77707-T Kwan": 0,
+                "29436-K Hart": 4,
+                "88927-T Oliver": 2
+            }
         },
         {
-            "EmpNum": "29436",
-            "Topic": "CAPA",
-            "Status": "On Time",
-            "count": 1
+            "sex": "Late",
+            "ses": "CAPA",
+            "endpoint": {
+                "32301-J Scott": 3,
+                "49570-Z Taylor": 3,
+                "77030-B Cranston": 1,
+                "77707-T Kwan": 4,
+                "29436-K Hart": 2,
+                "88927-T Oliver": 3
+            }
         },
         {
-            "EmpNum": "29436",
-            "Topic": "Inspection",
-            "Status": "Late",
-            "count": 3
+            "sex": "On Time",
+            "ses": "Inspection",
+            "endpoint": {
+                "32301-J Scott": 3,
+                "49570-Z Taylor": 0,
+                "77030-B Cranston": 1,
+                "77707-T Kwan": 3,
+                "29436-K Hart": 4,
+                "88927-T Oliver": 2
+            }
         },
         {
-            "EmpNum": "29436",
-            "Topic": "Inspection",
-            "Status": "On Time",
-            "count": 3
+            "sex": "Late",
+            "ses": "Inspection",
+            "endpoint": {
+                "32301-J Scott": 6,
+                "49570-Z Taylor": 3,
+                "77030-B Cranston": 3,
+                "77707-T Kwan": 6,
+                "29436-K Hart": 1,
+                "88927-T Oliver": 3
+            }
         },
         {
-            "EmpNum": "29436",
-            "Topic": "Training",
-            "Status": "On Time",
-            "count": 7
+            "sex": "On Time",
+            "ses": "New Product",
+            "endpoint": {
+                "32301-J Scott": 5,
+                "49570-Z Taylor": 4,
+                "77030-B Cranston": 5,
+                "77707-T Kwan": 3,
+                "29436-K Hart": 4,
+                "88927-T Oliver": 1
+            }
         },
         {
-            "EmpNum": "29436.0",
-            "Topic": "New Product",
-            "Status": "Late",
-            "count": 4
+            "sex": "Late",
+            "ses": "New Product",
+            "endpoint": {
+                "32301-J Scott": 2,
+                "49570-Z Taylor": 2,
+                "77030-B Cranston": 4,
+                "77707-T Kwan": 0,
+                "29436-K Hart": 1,
+                "88927-T Oliver": 3
+            }
         },
         {
-            "EmpNum": "29436.0",
-            "Topic": "New Product",
-            "Status": "On Time",
-            "count": 3
+            "sex": "On Time",
+            "ses": "Audit",
+            "endpoint": {
+                "32301-J Scott": 9,
+                "49570-Z Taylor": 4,
+                "77030-B Cranston": 6,
+                "77707-T Kwan": 3,
+                "29436-K Hart": 0,
+                "88927-T Oliver": 0
+            }
         },
         {
-            "EmpNum": "32301",
-            "Topic": "Audit",
-            "Status": "On Time",
-            "count": 4
+            "sex": "Late",
+            "ses": "Audit",
+            "endpoint": {
+                "32301-J Scott": 3,
+                "49570-Z Taylor": 1,
+                "77030-B Cranston": 3,
+                "77707-T Kwan": 5,
+                "29436-K Hart": 0,
+                "88927-T Oliver": 0
+            }
         },
         {
-            "EmpNum": "32301",
-            "Topic": "CAPA",
-            "Status": "Late",
-            "count": 1
+            "sex": "On Time",
+            "ses": "Training",
+            "endpoint": {
+                "32301-J Scott": 9,
+                "49570-Z Taylor": 1,
+                "77030-B Cranston": 8,
+                "77707-T Kwan": 2,
+                "29436-K Hart": 1,
+                "88927-T Oliver": 4
+            }
         },
         {
-            "EmpNum": "32301",
-            "Topic": "CAPA",
-            "Status": "On Time",
-            "count": 2
-        },
-        {
-            "EmpNum": "32301",
-            "Topic": "Inspection",
-            "Status": "Late",
-            "count": 2
-        },
-        {
-            "EmpNum": "32301",
-            "Topic": "Inspection",
-            "Status": "On Time",
-            "count": 1
-        },
-        {
-            "EmpNum": "32301",
-            "Topic": "Training",
-            "Status": "On Time",
-            "count": 5
-        },
-        {
-            "EmpNum": "32301.0",
-            "Topic": "New Product",
-            "Status": "On Time",
-            "count": 2
-        },
-        {
-            "EmpNum": "49570",
-            "Topic": "Audit",
-            "Status": "Late",
-            "count": 2
-        },
-        {
-            "EmpNum": "49570",
-            "Topic": "Audit",
-            "Status": "On Time",
-            "count": 5
-        },
-        {
-            "EmpNum": "49570",
-            "Topic": "CAPA",
-            "Status": "Late",
-            "count": 2
-        },
-        {
-            "EmpNum": "49570",
-            "Topic": "CAPA",
-            "Status": "On Time",
-            "count": 3
-        },
-        {
-            "EmpNum": "49570",
-            "Topic": "Inspection",
-            "Status": "Late",
-            "count": 4
-        },
-        {
-            "EmpNum": "49570",
-            "Topic": "Inspection",
-            "Status": "On Time",
-            "count": 2
-        },
-        {
-            "EmpNum": "49570",
-            "Topic": "Training",
-            "Status": "Late",
-            "count": 1
-        },
-        {
-            "EmpNum": "49570",
-            "Topic": "Training",
-            "Status": "On Time",
-            "count": 2
-        },
-        {
-            "EmpNum": "49570.0",
-            "Topic": "New Product",
-            "Status": "Late",
-            "count": 2
-        },
-        {
-            "EmpNum": "49570.0",
-            "Topic": "New Product",
-            "Status": "On Time",
-            "count": 2
-        },
-        {
-            "EmpNum": "77030",
-            "Topic": "Audit",
-            "Status": "Late",
-            "count": 2
-        },
-        {
-            "EmpNum": "77030",
-            "Topic": "Audit",
-            "Status": "On Time",
-            "count": 13
-        },
-        {
-            "EmpNum": "77030",
-            "Topic": "CAPA",
-            "Status": "Late",
-            "count": 7
-        },
-        {
-            "EmpNum": "77030",
-            "Topic": "CAPA",
-            "Status": "On Time",
-            "count": 2
-        },
-        {
-            "EmpNum": "77030",
-            "Topic": "Inspection",
-            "Status": "Late",
-            "count": 2
-        },
-        {
-            "EmpNum": "77030",
-            "Topic": "Inspection",
-            "Status": "On Time",
-            "count": 6
-        },
-        {
-            "EmpNum": "77030",
-            "Topic": "Training",
-            "Status": "Late",
-            "count": 1
-        },
-        {
-            "EmpNum": "77030",
-            "Topic": "Training",
-            "Status": "On Time",
-            "count": 3
-        },
-        {
-            "EmpNum": "77030.0",
-            "Topic": "New Product",
-            "Status": "Late",
-            "count": 3
-        },
-        {
-            "EmpNum": "77030.0",
-            "Topic": "New Product",
-            "Status": "On Time",
-            "count": 2
-        },
-        {
-            "EmpNum": "77707",
-            "Topic": "Audit",
-            "Status": "Late",
-            "count": 2
-        },
-        {
-            "EmpNum": "77707",
-            "Topic": "Audit",
-            "Status": "On Time",
-            "count": 6
-        },
-        {
-            "EmpNum": "77707",
-            "Topic": "CAPA",
-            "Status": "Late",
-            "count": 2
-        },
-        {
-            "EmpNum": "77707",
-            "Topic": "CAPA",
-            "Status": "On Time",
-            "count": 1
-        },
-        {
-            "EmpNum": "77707",
-            "Topic": "Inspection",
-            "Status": "Late",
-            "count": 2
-        },
-        {
-            "EmpNum": "77707",
-            "Topic": "Inspection",
-            "Status": "On Time",
-            "count": 2
-        },
-        {
-            "EmpNum": "77707",
-            "Topic": "Training",
-            "Status": "On Time",
-            "count": 8
-        },
-        {
-            "EmpNum": "77707.0",
-            "Topic": "New Product",
-            "Status": "Late",
-            "count": 4
-        },
-        {
-            "EmpNum": "77707.0",
-            "Topic": "New Product",
-            "Status": "On Time",
-            "count": 1
-        },
-        {
-            "EmpNum": "88927",
-            "Topic": "CAPA",
-            "Status": "Late",
-            "count": 4
-        },
-        {
-            "EmpNum": "88927",
-            "Topic": "CAPA",
-            "Status": "On Time",
-            "count": 5
-        },
-        {
-            "EmpNum": "88927",
-            "Topic": "Inspection",
-            "Status": "Late",
-            "count": 5
-        },
-        {
-            "EmpNum": "88927",
-            "Topic": "Inspection",
-            "Status": "On Time",
-            "count": 3
-        },
-        {
-            "EmpNum": "88927",
-            "Topic": "Training",
-            "Status": "Late",
-            "count": 1
-        },
-        {
-            "EmpNum": "88927",
-            "Topic": "Training",
-            "Status": "On Time",
-            "count": 5
-        },
-        {
-            "EmpNum": "88927.0",
-            "Topic": "New Product",
-            "Status": "Late",
-            "count": 3
+            "sex": "Late",
+            "ses": "Training",
+            "endpoint": {
+                "32301-J Scott": 2,
+                "49570-Z Taylor": 0,
+                "77030-B Cranston": 1,
+                "77707-T Kwan": 0,
+                "29436-K Hart": 1,
+                "88927-T Oliver": 4
+            }
         }
     ]
 }

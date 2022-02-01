@@ -2,12 +2,12 @@ drawChart()
     function drawChart() {
       
       // Data
-      d3.json("data.json", function (dataset) {
-        // Accessors
+      d3.json("json_data.json", function (dataset) {
+        dataset = dataset.sankeyData
   // Accessors
   console.log("hello")
   const sexAccessor = d => d.sex
-  const sexes = ["male","female"]
+  const sexes = ["On Time","Late"]
   const sexIds = d3.range(sexes.length)
 
   const educationAccessor = d => d.education
@@ -21,39 +21,48 @@ drawChart()
     
   const sesIds = d3.range(sesNames.length)
 
-  // probabilities
-  const stackedProbabilities = {}
+  allPaths = {} 
   dataset.forEach(startingPoint => {
-    const key = getStatusKey(startingPoint)
-    let stackedProbability = 0
-    stackedProbabilities[key] = educationNames.map((education, i) => {
-      stackedProbability += (startingPoint.endpoint[education]/100)
-      if (i == educationNames.length - 1) {
-        // account for rounding
-        return 1
-      } else {
-        return stackedProbability
-      }
-    })
-  })
+      educationNames.forEach(edu => 
+      {allPaths[[getStatusKey(startingPoint),edu].join("--")]=startingPoint.endpoint[edu]}
+  )})
+//   console.log(allPaths)
+  // probabilities
+//   const stackedProbabilities = {}
+//   dataset.forEach(startingPoint => {
+//     const key = getStatusKey(startingPoint)
+//     // let stackedProbability = 0
+//     // stackedProbabilities[key] = educationNames.map((education, i) => {
+//     //   stackedProbability += (startingPoint.endpoint[education]/100)
+//     //   if (i == educationNames.length - 1) {
+//     //     // account for rounding
+//     //     return 1
+//     //   } else {
+//     //     return stackedProbability
+//     //   }
+//     // })
+//   })
   
   // persons
   let currentPersonId = 0
-        function generatePerson(elapsed,ses) {
+  let peopleLookup = {}
+  dataset.forEach(startingPoint => {
+    educationNames.forEach(edu => 
+    {peopleLookup[[getStatusKey(startingPoint),edu].join("--")]=0}
+)})
+        function generatePerson(elapsed,sex,ses,edu) {
           currentPersonId++
-        //   const sex = getRandomValue(sexIds)
-        const sex = 1
-        //   const ses = getRandomValue(sesIds)
-        // const ses = 1
-          const statusKey = getStatusKey({
-            sex: sexes[sex],
-            ses: sesNames[ses],
-          })
           
-          const probabilities = stackedProbabilities[statusKey]
+        //   const statusKey = getStatusKey({
+        //     sex: sexes[sex],
+        //     ses: sesNames[ses],
+        //   })
+          
+        //   const probabilities = stackedProbabilities[statusKey]
           // console.log("female--Horn")
-          const education = d3.bisect(probabilities, Math.random())
-
+        //   const education = d3.bisect(probabilities, Math.random())
+        // const education = 0
+          education = edu
           return {
             id: currentPersonId,
             sex,
@@ -198,7 +207,7 @@ femaleLegend.append("path")
 
 femaleLegend.append("text")
 .attr("class", "legend-text-left")
-.text("Female")
+.text("On Time")
 .attr("x", -20)
 .attr("y", 4)
 
@@ -218,7 +227,7 @@ maleLegend.append("circle")
 
 maleLegend.append("text")
 .attr("class", "legend-text-right")
-.text("Male")
+.text("Late")
 .attr("x", 15)
 .attr("y", 4)
 
@@ -266,13 +275,39 @@ maleLegend.append("line")
     //
 
     const xProgressAccessor = d => (elapsed - d.startTime) / 5000
-    if (people.length < maxPeople) {
+    // if (people.length < maxPeople) {
+        // console.log(d3.sum(Object.values(peopleLookup))+" less than "+d3.sum(Object.values(allPaths)) )
+        // console.log(d3.sum(Object.values(peopleLookup))<=d3.sum(Object.values(allPaths)) )
+        // if (d3.sum(Object.values(peopleLookup))<=d3.sum(Object.values(allPaths))) {
+        // var sex = getRandomValue(sexIds)
+        // var ses = getRandomValue(sesIds)
+        // var edu = getRandomValue(educationIds)
+        // var checkPeople = [sexes[sex],sesNames[ses],educationNames[edu]].join("--")
+        
+        var peopleKeys = Object.keys(peopleLookup).filter(key =>allPaths[key]>0)
+        // console.log(peopleKeys)
+    
+        if (peopleKeys.length>0) {    
+        // var checkPeople = getRandomValue(peopleKeys)
+        checkPeople = peopleKeys[0]
+        // while (peopleLookup[checkPeople]<allPaths[checkPeople]) {
+        checkPath = checkPeople.split("--")
+        sex = sexes.indexOf(checkPath[0])
+        ses = sesNames.indexOf(checkPath[1])
+        edu = educationNames.indexOf(checkPath[2])
+        peopleLookup[checkPeople]++
+        // console.log(checkPeople)
+        
+
       people = [
         ...people,
-        ...d3.range(2).map(() => generatePerson(elapsed,0)),
+        ...d3.range(1).map(() => generatePerson(elapsed,sex,ses,edu)),
       ]
+      if (peopleLookup[checkPeople]>=allPaths[checkPeople]) {delete peopleLookup[checkPeople]}
+      
     }
-
+    
+    // console.log(people)
     const females = markersGroup.selectAll(".marker-circle")
       .data(people.filter(d => (
         xProgressAccessor(d) < 1
